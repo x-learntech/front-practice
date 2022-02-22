@@ -1,0 +1,31 @@
+{
+  "name": "@learntech/main",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "imruxin <admin@imruxin.com>",
+  "homepage": "https://github.com/x-learntech/front-practice#readme",
+  "license": "ISC",
+  "main": "src/main.js",
+  "directories": {
+    "lib": "src"
+  },
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmmirror.com/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/x-learntech/front-practice.git"
+  },
+  "scripts": {
+    "start": "webpack"
+  },
+  "dependencies": {
+    "@learntech/core": "^1.0.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.9.2"
+  }
+}
