@@ -1,0 +1,8 @@
+@import "./mixin/text-overflow.scss"; // 文本格式化超出省略号  参数：宽度,单行/多行
+@import "./mixin/triangle.scss"; // 画三角形  参数：宽度,朝向,颜色
+
+/*每个页面公共css */
+page {
+  min-height: 100%;
+  background-color: #f7f7f7;
+}
