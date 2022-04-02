@@ -1,6 +1,6 @@
 {
   "name": "@learntech/main",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "> TODO: description",
   "author": "imruxin <admin@imruxin.com>",
   "homepage": "https://github.com/x-learntech/front-practice#readme",
@@ -23,6 +23,6 @@
     "start": "webpack"
   },
   "dependencies": {
-    "@learntech/core": "^1.0.0"
+    "@learntech/core": "^1.0.1"
   }
 }
