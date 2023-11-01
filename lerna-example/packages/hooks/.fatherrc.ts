@@ -15,8 +15,8 @@ export default defineConfig({
     platform: 'node', // 默认构建为 Node.js 环境的产物
     transformer: 'esbuild', // 默认使用 esbuild 以获得更快的构建速度
   },
-  prebundle: {
-    deps: [], // 需要预打包的依赖包名，需要安装在 `devDependencies` 中
-    output: 'compiled', // 默认输出目录，有自定义需求时才需配置
-  },
+  // prebundle: {
+  //   deps: [], // 需要预打包的依赖包名，需要安装在 `devDependencies` 中
+  //   output: 'compiled', // 默认输出目录，有自定义需求时才需配置
+  // },
 });
