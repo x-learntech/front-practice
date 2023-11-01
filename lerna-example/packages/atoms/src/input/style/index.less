@@ -1,0 +1,306 @@
+@import '../../styles/theme/default.less';
+
+@textArea-cls: ~'@{ant-prefix}-textarea-tips-num';
+@select-cls: ~'@{ant-prefix}-select';
+
+// 输入内容，多余展示省略号
+input.@{ant-prefix}-input {
+  text-overflow: ellipsis;
+}
+
+// 获取焦点时候的光标为主题色
+// 输入框的input颜色为#262626
+.@{ant-prefix}-input-number:focus,
+.@{ant-prefix}-input-number-focused{
+  box-shadow: none;
+}
+.@{ant-prefix}-number-input,
+.@{ant-prefix}-input {
+  padding: 6px 12px;
+  color: #262626;
+  border-radius: 6px;
+  caret-color: @primary-color;
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &::placeholder {
+    color: #bcc1cd;
+  }
+
+  &[disabled] {
+    border-color: @disabled-border-color;
+
+    &:hover {
+      border-color: @disabled-border-color;
+    }
+  }
+}
+
+// 有前后固定标题的样式（固定的文本距离内容12px）
+.@{ant-prefix}-input-affix-wrapper {
+  padding-right: 10px;
+  padding-left: 12px;
+
+  .@{ant-prefix}-input-prefix {
+    margin-right: 12px;
+    color: #858b9b;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  .@{ant-prefix}-input-suffix > span {
+    margin-left: 12px;
+  }
+
+  .@{ant-prefix}-input-suffix {
+    // margin-left: 12px;
+    margin-left: 0;
+    color: #858b9b;
+    font-weight: 400;
+    font-size: 14px;
+
+    span.@{ant-prefix}-input-clear-icon {
+      margin-left: 8px;
+      color: #bcc1cd;
+      font-size: 14px;
+      opacity: 0;
+      &:hover {
+        color: #858b9b;
+      }
+    }
+
+    .@{ant-prefix}-input-clear-icon-has-suffix,
+    .@{ant-prefix}-input-clear-icon-has-suffix {
+      margin-right: 8px;
+    }
+  }
+
+  .@{ant-prefix}-input-password-icon:hover {
+    color: @primary-color;
+  }
+
+  &:hover {
+    span.@{ant-prefix}-input-clear-icon {
+      opacity: 1;
+    }
+  }
+}
+
+.@{select-cls} {
+  .ant-select-clear {
+    color: #bfbfbf;
+  }
+}
+
+.@{textArea-cls} {
+  color: #bfbfbf;
+  font-size: 12px;
+}
+
+// 有前后标签的样式，输入框右边距为10
+.@{ant-prefix}-input-group-wrapper {
+  .@{ant-prefix}-input-group {
+    .@{ant-prefix}-input-affix-wrapper {
+      padding-right: 8px;
+    }
+
+    .@{ant-prefix}-input-group-addon {
+      padding-right: 8px;
+      padding-left: 12px;
+      background-color: #fff;
+
+      .@{ant-prefix}-select {
+        .@{ant-prefix}-select-selector {
+          padding: 0 12px;
+
+          .@{ant-prefix}-select-selection-item,
+          .@{ant-prefix}-select-selection-placeholder {
+            padding-right: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 文本域输入框样式（ 滚动条）
+.@{ant-prefix}-textarea-warp {
+  position: relative;
+
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  ::-webkit-scrollbar:horizontal {
+    height: 32px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #dce0e8;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:vertical,
+  ::-webkit-scrollbar-thumb:horizontal {
+    background: #dce0e8;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #bcc1cd;
+  }
+
+  .@{ant-prefix}-input {
+    box-sizing: border-box;
+    min-height: 56px;
+    padding: 8px 12px;
+    text-align: justify;
+  }
+
+  .@{ant-prefix}-input-textarea-clear-icon {
+    color: rgba(0, 0, 0, 0.45);
+  }
+
+  .@{textArea-cls} {
+    position: absolute;
+    right: 12px;
+    bottom: 1px;
+    left: 3px;
+    z-index: 10;
+    height: 26px;
+    padding-top: 4px;
+    padding-bottom: 3px;
+    padding-left: 6px;
+    color: #bfbfbf;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: right;
+    background-color: #fff;
+    border-radius: 6px;
+  }
+
+  .@{ant-prefix}-textarea-input {
+    padding-bottom: 26px;
+    text-align: justify;
+    caret-color: @primary-color;
+  }
+
+  .@{ant-prefix}-textarea-input.@{ant-prefix}-input-affix-wrapper-textarea-with-clear-btn {
+    padding-bottom: 0;
+
+    & + .@{textArea-cls} {
+      bottom: 2px;
+    }
+  }
+
+  .@{ant-prefix}-input-textarea {
+    .@{ant-prefix}-input-affix-wrapper > .ant-input {
+      border-radius: 6px;
+    }
+  }
+}
+.@{ant-prefix}-input-affix-wrapper-textarea-with-clear-btn {
+  border: none;
+  textarea {
+    border: 1px solid @border-color-base !important;
+    &:focus {
+      border: 1px solid @primary-color-hover !important;
+    }
+  }
+  span.@{ant-prefix}-input-clear-icon {
+    color: #bcc1cd;
+    font-size: 14px;
+    opacity: 0;
+    &:hover {
+      color: #858b9b;
+    }
+  }
+  &:hover span.@{ant-prefix}-input-clear-icon {
+    opacity: 1;
+  }
+  &.@{ant-prefix}-input-affix-wrapper-status-error {
+    textarea {
+      border: 1px solid @error-color !important;
+    }
+  }
+}
+.@{textArea-cls} {
+  .@{ant-prefix}-textarea-tips-highlight {
+    > span {
+      color: @primary-color;
+    }
+  }
+}
+
+.@{ant-prefix}-input-tips {
+  .@{ant-prefix}-input-tips-highlight {
+    > span {
+      color: @primary-color;
+    }
+  }
+}
+
+textarea.@{ant-prefix}-input {
+  padding: 8px 12px;
+}
+
+form textarea.@{ant-prefix}-input {
+  margin-bottom: 0;
+}
+
+// .@{ant-prefix}-input-affix-wrapper > .@{ant-prefix}-input {
+//   border-radius: 0;
+// }
+
+.@{ant-prefix}-input-search-button {
+  .anticon-search {
+    &:after {
+      font-size: 16px;
+      font-family: 'iconfont' !important;
+      font-style: normal;
+      content: '\e301';
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    svg {
+      display: none;
+    }
+  }
+}
+
+.anticon.@{ant-prefix}-input-search-icon {
+  &:after {
+    font-size: 16px;
+    font-family: 'iconfont' !important;
+    font-style: normal;
+    content: '\e301';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  svg {
+    display: none;
+  }
+}
+
+.@{ant-prefix}-input-affix-wrapper {
+  padding: 4.44px 11px;
+}
+.@{ant-prefix}-input-affix-wrapper-lg {
+  padding: 6.44px 12px;
+}
+
+.@{ant-prefix}-input-affix-wrapper:focus,
+.@{ant-prefix}-input-affix-wrapper-focused {
+  box-shadow: none;
+}
+
+.@{ant-prefix}-input-search-small .@{ant-prefix}-input-search-button {
+  height: 27px;
+}
+.@{ant-prefix}-input-search-large .@{ant-prefix}-input-search-button {
+  height: 40px;
+}

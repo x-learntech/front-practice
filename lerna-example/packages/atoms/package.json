@@ -1,0 +1,44 @@
+{
+  "name": "@vv-desktop-web-core/atoms",
+  "version": "1.0.1",
+  "description": "基础组件库",
+  "main": "./lib/index.js",
+  "unpkg": "dist/index.umd.min.js",
+  "module": "./es/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "lib",
+    "es",
+    "package.json",
+    "README.md"
+  ],
+  "scripts": {
+    "dev": "father dev",
+    "build": "father build && tsc --emitDeclarationOnly",
+    "build:deps": "father prebundle",
+    "prepublishOnly": "father doctor && npm run build",
+    "tsc:declarationFile": "tsc --emitDeclarationOnly"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@vv-desktop-web-core/hooks": "^1.0.1",
+    "antd": "^4.24.7",
+    "autoprefixer": "^10.4.2",
+    "classnames": "^2.3.1",
+    "color-parse": "^1.4.2",
+    "escape-string-regexp": "^5.0.0",
+    "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.6",
+    "@types/react-transition-group": "^4.4.0",
+    "less-plugin-npm-import": "^2.1.0",
+    "postcss": "^8.3.5",
+    "through2": "^4.0.2"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "@vv-desktop-web-core/hooks",
+  "version": "1.0.1",
+  "description": "hooks库",
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "lib",
+    "es",
+    "package.json",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "dev": "father dev",
+    "build": "father build",
+    "build:deps": "father prebundle",
+    "prepublishOnly": "father doctor && npm run build"
+  },
+  "keywords": [],
+  "dependencies": {
+    "ahooks": "^3.7.4",
+    "localforage": "^1.10.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6 || ^17.0"
+  }
+}
