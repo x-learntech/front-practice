@@ -1,0 +1,47 @@
+@import '~antd/es/button/style/mixin';
+@import '../../styles/theme/default.less';
+
+.@{ant-prefix}-notification-notice {
+  padding: 32px 24px 24px 24px;
+  width: 364px;
+  min-height: 148px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px 0 rgba(0,0,0,0.06);
+}
+
+.@{ant-prefix}-notification-notice-icon {
+  margin-left: 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.@{ant-prefix}-notification-notice-message {
+  margin-bottom: 8px !important;
+  line-height: 24px;
+  font-size: 16px;
+  color: #262626;
+  font-weight: 600;
+}
+
+.@{ant-prefix}-notification-notice-description {
+  margin-bottom: 8px !important;
+  margin-top: 8px;
+  color: rgba(0,0,0,0.45);
+  font-weight: 400;
+}
+
+.@{ant-prefix}-notification-notice-with-icon {
+  .@{ant-prefix}-notification-notice-message, .@{ant-prefix}-notification-notice-description {
+    margin-left: 26px;
+    padding-right: 10px;
+  }
+}
+
+.@{ant-prefix}-notification-notice-btn {
+  button.@{ant-prefix}-btn {
+    min-width: 68px !important;
+    margin-left: 8px;
+    padding: 0 20px !important;
+    height: 32px;
+  }
+}

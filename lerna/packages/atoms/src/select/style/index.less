@@ -1,0 +1,134 @@
+@import '../../styles/theme/default.less';
+
+@prefix-select-plus: ~'@{ant-prefix}-select-plus';
+@prefix-select-plus-dropdown: ~'@{ant-prefix}-select-plus-dropdown';
+@prefix-select-menu: ~'@{ant-prefix}-select-dropdown-menu';
+
+.@{prefix-select-plus}-multiple-item-checkbox {
+  margin-right: 8px;
+}
+
+// 重写 select 的样式
+// 多选的标签
+.@{ant-prefix}-select {
+  transition: transform .2s;
+
+  .@{ant-prefix}-selection--multiple .@{ant-prefix}-search--inline .@{ant-prefix}-search__field {
+    margin-right: -4px;
+  }
+
+  &-item {
+    padding: 5px 8px;
+    margin: 0 8px;
+    border-radius: 6px;
+    font-size: 14px;
+    // 解决增加下拉选项间距造成虚拟滚动高度计算异常bug
+    border-top: 1px solid @component-background;
+    border-bottom: 1px solid @component-background;
+
+    &-option-active,
+    &-option-selected:not(&-option-item-disabled) {
+      background-color: transparent;
+      position: relative;
+      font-weight: normal;
+    }
+
+    &-option-selected:not(&-option-item-disabled) {
+      color: @primary-color;
+    }
+  }
+
+  &-dropdown {
+    max-height: 304px;
+
+    .rc-virtual-list-scrollbar-thumb {
+      width: 4px !important;
+      background: @border-color-base !important;
+      border-radius: 8px !important;
+    }
+  }
+
+  &-selection--multiple {
+    .@{ant-prefix}-select-selection__choice {
+      padding: 0 22px 0 6px;
+      background-color: @background-color-base;
+      border-color: @background-color-base;
+      color: @text-color;
+    }
+  }
+
+  &-multiple &-selection-item {
+    height: 28px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    line-height: 26px;
+    background: #f2f3f4;
+    border: 1px solid #f2f3f4;
+  }
+
+  &-arrow {
+    &-icon {
+      color: hsv(0, 0, 55%);
+    }
+  }
+
+  &-focused:not(.ant-select-disabled) &:not(&-customize-input) &-selector {
+    box-shadow: none;
+    // focus 需要阴影的话用下面这个样式
+    //box-shadow: 0 0 0 2px fade(@primary-color, 15%);
+  }
+}
+
+.@{ant-prefix}-select-single:not(.@{ant-prefix}-select-customize-input) .@{ant-prefix}-select-selector {
+  padding: 0 14px;
+
+  &::after {
+    min-width: 14px;
+  }
+}
+
+.@{ant-prefix}-select-dropdown {
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+
+  .@{ant-prefix}-empty-description {
+    color: @text-color-secondary !important;
+  }
+}
+
+.@{ant-prefix}-select-arrow {
+  color: @text-color-secondary;
+}
+
+.@{ant-prefix}-select-show-arrow {
+  .@{ant-prefix}-select-arrow {
+    .anticon-down {
+      transform: scaleY(.8);
+      transform-origin: 50% 50%;
+    }
+  }
+
+  .@{ant-prefix}-select-clear {
+    margin-top: -8px;
+    width: 14px;
+    height: 14px;
+    padding: 1px;
+    font-size: 14px;
+    color: @input-placeholder-color;
+
+    &:hover {
+      color: @text-color-secondary;
+    }
+  }
+}
+
+.@{ant-prefix}-select-open .@{ant-prefix}-select-arrow .anticon-down {
+  transform: scaleY(0.8) rotate(180deg);
+}
+
+.@{ant-prefix}-select-clear {
+  font-size: 14px;
+  width: 14px;
+  height: 14px;
+  margin-top: -7px;
+}

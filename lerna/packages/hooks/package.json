@@ -1,0 +1,28 @@
+{
+  "name": "@vv-desktop-web-core/hooks",
+  "version": "1.0.0",
+  "description": "hooks库",
+  "main": "./lib/index.js",
+  "module": "./es/index.js",
+  "types": "./lib/index.d.ts",
+  "files": [
+    "lib",
+    "es",
+    "package.json",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf es lib dist && father-build"
+  },
+  "keywords": [],
+  "dependencies": {
+    "ahooks": "^3.7.4",
+    "localforage": "^1.10.0"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6 || ^17.0"
+  },
+  "gitHead": "fbf4754ceba6b4edd128c58e9bd05c1f04452ffa"
+}

@@ -1,0 +1,411 @@
+@import '~antd/es/button/style/mixin';
+@import '../../styles/theme/default.less';
+
+// 覆盖icon和文案间距
+.@{ant-prefix}-btn > .anticon + span,
+.@{ant-prefix}-btn > span + .anticon {
+  margin-left: 4px;
+}
+
+.@{ant-prefix}-btn-sm {
+  font-size: 12px;
+
+  &:not(.@{ant-prefix}-btn-icon-only):not(.@{ant-prefix}-btn-circle) {
+    padding: 0 14px;
+  }
+}
+
+.@{ant-prefix}-btn-link {
+  color: @primary-color;
+}
+
+.@{ant-prefix}-btn-primary {
+  text-shadow: none;
+  box-shadow: none;
+
+  &.@{ant-prefix}-btn-loading::before {
+    display: none;
+  }
+
+  &:hover {
+    background: @primary-color-hover;
+    border-color: @primary-color-hover;
+  }
+
+  &:focus {
+    background: @primary-color;
+    border-color: @primary-color;
+  }
+
+  &:active {
+    background: @primary-color-active;
+    border-color: @primary-color-active;
+  }
+
+  &:disabled {
+    background: @primary-color-disabled;
+    border-color: @primary-color-disabled;
+  }
+}
+
+.@{ant-prefix}-btn-danger {
+  text-shadow: none;
+}
+
+// primary disabled
+.@{ant-prefix}-btn-primary[disabled],
+.@{ant-prefix}-btn-primary[disabled]:hover,
+.@{ant-prefix}-btn-primary[disabled]:focus,
+.@{ant-prefix}-btn-primary[disabled]:active {
+  color: @white;
+  font-weight: 500;
+  background: @primary-color-disabled;
+  border-color: @primary-color-disabled;
+}
+
+// default disabled
+.@{ant-prefix}-btn-default[disabled],
+.@{ant-prefix}-btn-default[disabled]:hover,
+.@{ant-prefix}-btn-default[disabled]:focus,
+.@{ant-prefix}-btn-default[disabled]:active {
+  color: @input-placeholder-color;
+  font-weight: 500;
+  background: @white;
+  border-color: @input-placeholder-color;
+}
+
+// dashed disabled
+.@{ant-prefix}-btn-dashed[disabled],
+.@{ant-prefix}-btn-dashed[disabled]:hover,
+.@{ant-prefix}-btn-dashed[disabled]:focus,
+.@{ant-prefix}-btn-dashed[disabled]:active {
+  color: @input-placeholder-color;
+  background: @white;
+  border-color: @disabled-border-color;
+}
+
+// primaryDashed disabled
+.@{ant-prefix}-btn-primaryDashed[disabled],
+.@{ant-prefix}-btn-primaryDashed[disabled]:hover,
+.@{ant-prefix}-btn-primaryDashed[disabled]:focus,
+.@{ant-prefix}-btn-primaryDashed[disabled]:active {
+  color: @input-placeholder-color;
+  background: @white;
+  border-color: @disabled-border-color;
+}
+
+// text disabled
+.@{ant-prefix}-btn-text[disabled],
+.@{ant-prefix}-btn-text[disabled]:hover,
+.@{ant-prefix}-btn-text[disabled]:focus,
+.@{ant-prefix}-btn-text[disabled]:active,
+.@{ant-prefix}-btn-link[disabled],
+.@{ant-prefix}-btn-link[disabled]:hover,
+.@{ant-prefix}-btn-link[disabled]:focus,
+.@{ant-prefix}-btn-link[disabled]:active {
+  color: @input-placeholder-color;
+}
+
+// primary shadow
+.@{ant-prefix}-btn-primary.@{ant-prefix}-btn-shadow {
+  box-shadow: 0 6px 10px 0 rgba(63, 140, 255, 0.26);
+}
+
+// shape
+.@{ant-prefix}-btn {
+  border-radius: 6px;
+}
+
+.@{ant-prefix}-btn-round {
+  border-radius: 18px;
+}
+
+.@{ant-prefix}-btn-circle {
+  border-radius: 50%;
+}
+
+// secondary
+.@{ant-prefix}-btn-dashed,
+.@{ant-prefix}-btn-default {
+  color: @text-color-2;
+  border-color: @btn-default-border;
+
+  &:hover {
+    color: @primary-color;
+    background: @white;
+    border-color: @primary-color;
+  }
+
+  &:active {
+    color: @primary-color-active;
+    background: @white;
+    border-color: @primary-color-active;
+  }
+
+  &:disabled {
+    color: @input-disabled-color;
+    background: @white;
+    border-color: @disabled-border-color;
+  }
+}
+
+.@{ant-prefix}-btn-dashed {
+  border-color: @text-color-secondary;
+}
+
+// secondary
+.@{ant-prefix}-btn-secondary {
+  &:not(.@{ant-prefix}-input-search-button):not(.@{ant-prefix}-dropdown-trigger):not([class*='pagination']) {
+    color: @primary-color;
+    border-color: @primary-color;
+
+    &:hover {
+      color: @primary-color-hover;
+      background: @btn-default-bg;
+      border-color: @primary-color-hover;
+    }
+
+    &:active {
+      color: @primary-color-active;
+      background: @btn-default-bg;
+      border-color: @primary-color-active;
+    }
+
+    &:disabled {
+      color: @primary-color-disabled;
+      background: @btn-default-bg;
+      border-color: @primary-color-disabled;
+    }
+  }
+}
+
+// primaryDashed
+.@{ant-prefix}-btn-primaryDashed,
+.@{ant-prefix}-btn-primaryDashed:focus {
+  color: @primary-color;
+  border-color: @primary-color;
+  border-style: dashed;
+
+  &:hover {
+    color: @primary-color;
+    background: @btn-default-bg;
+    border-color: @primary-color;
+  }
+
+  &:active {
+    color: @primary-color-active;
+    background: @btn-default-bg;
+    border-color: @primary-color-active;
+  }
+
+  &:disabled {
+    color: @input-placeholder-color;
+    background: @btn-default-bg;
+    border-color: @disabled-border-color;
+  }
+}
+
+// primary ghost
+.@{ant-prefix}-btn-primary.@{ant-prefix}-btn-background-ghost {
+  &:hover {
+    color: @white;
+    background: #82b4ff;
+    border-color: #82b4ff;
+  }
+
+  &:active {
+    color: @white;
+    background: #3e6ecf;
+    border-color: #3e6ecf;
+  }
+
+  &:disabled {
+    color: @input-placeholder-color;
+    background: @white;
+    border-color: @border-color-base;
+  }
+}
+
+// text btn
+.@{ant-prefix}-btn-text {
+  color: @text-color-2;
+
+  &:hover {
+    color: @text-color-secondary;
+  }
+
+  &:active {
+    color: @text-color;
+  }
+
+  &:focus {
+    color: @text-color-2;
+  }
+}
+
+.@{ant-prefix}-btn-link {
+  &:hover {
+    color: @primary-color-hover;
+  }
+
+  &:active {
+    color: @primary-color-active;
+  }
+
+  &:focus {
+    color: @primary-color;
+  }
+}
+
+// danger btn
+.@{ant-prefix}-btn-dangerous {
+  &.@{ant-prefix}-btn-primary:focus {
+    background: @error-color;
+    border-color: @error-color;
+
+    &:active {
+      background: @error-color-active;
+      border-color: @error-color-active;
+    }
+  }
+
+  &.@{ant-prefix}-btn-default,
+  &.@{ant-prefix}-btn-default:focus {
+    color: @error-color;
+    border-color: @error-color;
+
+    &:hover {
+      color: @error-color-hover;
+      background: transparent;
+      border-color: @error-color-hover;
+    }
+
+    &:active {
+      color: @error-color-active;
+      background: transparent;
+      border-color: @error-color-active;
+    }
+  }
+
+  &.@{ant-prefix}-btn-dashed,
+  &.@{ant-prefix}-btn-dashed:focus {
+    color: @error-color;
+    border-color: @error-color;
+
+    &:hover {
+      color: @error-color-hover;
+      background: transparent;
+      border-color: @error-color-hover;
+    }
+
+    &:active {
+      color: @error-color-active;
+      background: transparent;
+      border-color: @error-color-active;
+    }
+  }
+
+  &.@{ant-prefix}-btn-text {
+    &:hover {
+      color: @error-color-hover;
+    }
+
+    &:focus {
+      color: @error-color;
+    }
+
+    &:active {
+      color: @error-color-active;
+    }
+  }
+
+  &.@{ant-prefix}-btn-link {
+    &:hover {
+      color: @error-color;
+    }
+
+    &:active {
+      color: @error-color-active;
+    }
+  }
+}
+
+// size
+.@{ant-prefix}-btn {
+  font-size: 14px;
+
+  &:not(.@{ant-prefix}-btn-icon-only):not(.@{ant-prefix}-btn-circle) {
+    min-width: 88px;
+    padding: 0 28px;
+  }
+
+  &.@{ant-prefix}-btn-with-icon&:not(.@{ant-prefix}-btn-icon-only):not(.@{ant-prefix}-btn-circle) {
+    min-width: 100px;
+    padding: 0 24px 0 20px;
+  }
+}
+
+.@{ant-prefix}-btn-lgX {
+  height: 40px !important;
+  font-size: 16px !important;
+
+  &.@{ant-prefix}-btn-round {
+    border-radius: 24px;
+  }
+
+  &:not(.@{ant-prefix}-btn-icon-only):not(.@{ant-prefix}-btn-circle) {
+    min-width: 96px;
+    padding: 0 32px;
+  }
+
+  &.@{ant-prefix}-btn-with-icon&:not(.@{ant-prefix}-btn-icon-only):not(.@{ant-prefix}-btn-circle) {
+    min-width: 108px;
+    padding: 0 30px 0 22px;
+  }
+}
+
+.@{ant-prefix}-btn-m {
+  height: 32px;
+  font-size: 14px;
+
+  &:not(.@{ant-prefix}-btn-icon-only):not(.@{ant-prefix}-btn-circle) {
+    min-width: 80px;
+    padding: 0 24px;
+  }
+
+  &.@{ant-prefix}-btn-with-icon&:not(.@{ant-prefix}-btn-icon-only):not(.@{ant-prefix}-btn-circle) {
+    min-width: 88px;
+    padding: 0 20px 0 16px;
+  }
+}
+
+.@{ant-prefix}-btn-sm {
+  font-size: 12px !important;
+
+  &:not(.@{ant-prefix}-btn-icon-only):not(.@{ant-prefix}-btn-circle) {
+    min-width: 64px;
+    padding: 0 20px;
+  }
+
+  &.@{ant-prefix}-btn-with-icon&:not(.@{ant-prefix}-btn-icon-only):not(.@{ant-prefix}-btn-circle) {
+    min-width: 72px;
+    padding: 0 14px;
+  }
+}
+
+// icon only or circle
+.@{ant-prefix}-btn-icon-only,
+.@{ant-prefix}-btn-circle {
+  border-radius: 50%;
+
+  &.@{ant-prefix}-btn-lgX {
+    width: 40px;
+    height: 40px;
+  }
+
+  &.@{ant-prefix}-btn-m {
+    width: 32px;
+    min-width: 32px !important;
+    height: 32px;
+  }
+}
