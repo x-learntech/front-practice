@@ -2,7 +2,7 @@
  * hideActions: ["CSB","EXTERNAL"]
  */
 import React from 'react';
-import { Pagination } from '@vv-desktop-web-core/atoms';
+import { Pagination } from '@xx-desktop-web-core/atoms';
 
 const Basic = () => {
   const [pagination, setPagination] = React.useState({ current: 1, pageSize: 10 });

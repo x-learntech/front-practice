@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React, { useState } from 'react';
-import { AutoComplete } from '@vv-desktop-web-core/atoms';
+import { AutoComplete } from '@xx-desktop-web-core/atoms';
 import '../style/index.less'
 
 const mockVal = (str, repeat = 1) => ({

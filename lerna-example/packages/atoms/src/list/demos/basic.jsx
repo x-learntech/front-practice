@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { List, Avatar } from '@vv-desktop-web-core/atoms';
+import { List, Avatar } from '@xx-desktop-web-core/atoms';
 
 const data = [
   {

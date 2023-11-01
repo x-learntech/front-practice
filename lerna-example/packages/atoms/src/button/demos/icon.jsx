@@ -4,7 +4,7 @@
  */
 /* eslint-disable */
 import React from 'react';
-import { Button, Tooltip, Space } from '@vv-desktop-web-core/atoms';
+import { Button, Tooltip, Space } from '@xx-desktop-web-core/atoms';
 import { SearchOutlined } from '@ant-design/icons';
 
 export default function Demo() {

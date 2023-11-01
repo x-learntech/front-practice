@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { ConfigProvider, Input, Button, Radio, Checkbox, DatePicker, Select, Divider, Row, Col } from '@vv-desktop-web-core/atoms';
+import { ConfigProvider, Input, Button, Radio, Checkbox, DatePicker, Select, Divider, Row, Col } from '@xx-desktop-web-core/atoms';
 import enUS from 'antd/es/locale/en_US';
 // import zhCN from 'antd/es/locale/zh_CN';
 import Form from '../index';

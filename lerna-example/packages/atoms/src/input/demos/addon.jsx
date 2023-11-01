@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { Input, Select, Space, Cascader } from '@vv-desktop-web-core/atoms';
+import { Input, Select, Space, Cascader } from '@xx-desktop-web-core/atoms';
 import { SettingOutlined } from '@ant-design/icons';
 
 const { Option } = Select;

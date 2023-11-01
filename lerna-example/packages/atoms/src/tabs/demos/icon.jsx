@@ -3,7 +3,7 @@
  * desc: 有图标的标签
  */
 import React from 'react';
-import { Tabs } from '@vv-desktop-web-core/atoms';
+import { Tabs } from '@xx-desktop-web-core/atoms';
 import { QuestionCircleOutlined, ExclamationCircleOutlined } from '@ant-design/icons';
 
 const { TabPane } = Tabs;

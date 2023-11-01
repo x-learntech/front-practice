@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { Cascader } from '@vv-desktop-web-core/atoms';
+import { Cascader } from '@xx-desktop-web-core/atoms';
 import { SmileOutlined } from '@ant-design/icons';
 
 const options = [

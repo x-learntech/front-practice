@@ -5,7 +5,7 @@ import { ConfigContext } from 'antd/es/config-provider/context';
 import { ConfigConsumerProps } from 'antd/es/config-provider';
 import { PasswordProps } from 'antd/es/input/Password';
 import classnames from 'classnames';
-import { useControllableValue } from '@vv-desktop-web-core/hooks';
+import { useControllableValue } from '@xx-desktop-web-core/hooks';
 import { Tips } from './components';
 import { IExtendProps } from './typings';
 

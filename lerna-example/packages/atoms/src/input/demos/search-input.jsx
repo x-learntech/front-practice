@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { Input, Space } from '@vv-desktop-web-core/atoms';
+import { Input, Space } from '@xx-desktop-web-core/atoms';
 import { AudioOutlined } from '@ant-design/icons';
 
 const { Search } = Input;

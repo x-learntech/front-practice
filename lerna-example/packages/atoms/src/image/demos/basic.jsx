@@ -3,7 +3,7 @@
  * desc: 简单展示
  */
 import React from 'react';
-import { Image } from '@vv-desktop-web-core/atoms';
+import { Image } from '@xx-desktop-web-core/atoms';
 
 export default () => (
   <>

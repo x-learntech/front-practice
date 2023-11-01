@@ -3,7 +3,7 @@
  * desc: 默认选中第一项
  */
 import React from 'react';
-import { Tabs } from '@vv-desktop-web-core/atoms';
+import { Tabs } from '@xx-desktop-web-core/atoms';
 
 const { TabPane } = Tabs;
 

@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { Input, Tooltip } from '@vv-desktop-web-core/atoms';
+import { Input, Tooltip } from '@xx-desktop-web-core/atoms';
 import { InfoCircleOutlined, UserOutlined } from '@ant-design/icons';
 
 export default () => (

@@ -4,7 +4,7 @@
  */
 /* eslint-disable */
 import React, { useState } from 'react'
-import { Button, Modal } from '@vv-desktop-web-core/atoms';
+import { Button, Modal } from '@xx-desktop-web-core/atoms';
 
 export default function Demo() {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -15,7 +15,7 @@ export default function Demo() {
       </Button>
       <Button onClick={() => {
         Modal.confirm({
-          title: '确认切换企业并刷新确认切换企业并刷新确认切换企业并刷新', 
+          title: '确认切换企业并刷新确认切换企业并刷新确认切换企业并刷新',
           content: '这是描述这是描述这是描述这是描述这是描述这是描述这是描述这是描述'
         })
       }}>
@@ -23,7 +23,7 @@ export default function Demo() {
       </Button>
       <Button onClick={() => {
         Modal.warning({
-          title: '确认切换企业并刷新数据？', 
+          title: '确认切换企业并刷新数据？',
           content: '如有未保存的数据，切换后将丢失，请先保存对应的数据',
           okText: '确定'
         })

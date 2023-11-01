@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { Input } from '@vv-desktop-web-core/atoms';
+import { Input } from '@xx-desktop-web-core/atoms';
 
 const { Search } = Input;
 

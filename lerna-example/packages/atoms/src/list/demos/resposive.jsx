@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { List, Card } from '@vv-desktop-web-core/atoms';
+import { List, Card } from '@xx-desktop-web-core/atoms';
 
 const data = [
   {

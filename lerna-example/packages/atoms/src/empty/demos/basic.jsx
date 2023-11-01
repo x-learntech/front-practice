@@ -3,7 +3,7 @@
  * desc: 简单展示
  */
 import React from 'react';
-import { Empty } from '@vv-desktop-web-core/atoms';
+import { Empty } from '@xx-desktop-web-core/atoms';
 
 export default () => (
     <>

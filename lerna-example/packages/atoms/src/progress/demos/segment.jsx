@@ -4,7 +4,7 @@
  */
 /* eslint-disable */
 
-import { Progress, Tooltip } from '@vv-desktop-web-core/atoms';
+import { Progress, Tooltip } from '@xx-desktop-web-core/atoms';
 export default function Demo() {
   return (
     <div>

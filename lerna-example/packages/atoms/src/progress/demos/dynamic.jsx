@@ -4,7 +4,7 @@
  */
 /* eslint-disable */
 
-import { Progress, Button } from '@vv-desktop-web-core/atoms';
+import { Progress, Button } from '@xx-desktop-web-core/atoms';
 
 const ButtonGroup = Button.Group;
 export default function Demo() {

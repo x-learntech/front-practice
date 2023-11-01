@@ -4,7 +4,7 @@
  */
 /* eslint-disable */
 import React from 'react';
-import { Input, Button, Col, Row, Select, InputNumber, DatePicker, AutoComplete, Cascader, Tooltip } from '@vv-desktop-web-core/atoms';
+import { Input, Button, Col, Row, Select, InputNumber, DatePicker, AutoComplete, Cascader, Tooltip } from '@xx-desktop-web-core/atoms';
 import { CopyOutlined } from '@ant-design/icons';
 
 const { Option } = Select;

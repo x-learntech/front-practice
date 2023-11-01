@@ -5,7 +5,7 @@
  */
 /* eslint-disable */
 
-import { Progress } from '@vv-desktop-web-core/atoms';
+import { Progress } from '@xx-desktop-web-core/atoms';
 export default function Demo() {
   return (
     <div>

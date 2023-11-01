@@ -4,7 +4,7 @@
  */
 /* eslint-disable */
 import React from 'react';
-import { Input, Button } from '@vv-desktop-web-core/atoms';
+import { Input, Button } from '@xx-desktop-web-core/atoms';
 
 const { TextArea } = Input;
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { TimePicker } from '@vv-desktop-web-core/atoms';
+import { TimePicker } from '@xx-desktop-web-core/atoms';
 import '../style/index.less';
 import moment from 'moment';
 

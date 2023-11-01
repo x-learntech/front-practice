@@ -6,7 +6,7 @@ import { TextAreaProps } from 'antd/es/input';
 import classnames from 'classnames';
 import { Tips } from './components';
 import { IExtendProps } from './typings';
-import { useControllableValue } from '@vv-desktop-web-core/hooks';
+import { useControllableValue } from '@xx-desktop-web-core/hooks';
 
 const TextArea: ForwardRefRenderFunction<any, TextAreaProps> = (
   { format = '/', className, showCount = false, maxLength = 500, highlight = 20, ...reset }: TextAreaProps & IExtendProps,

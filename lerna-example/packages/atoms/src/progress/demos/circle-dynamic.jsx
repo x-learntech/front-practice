@@ -4,7 +4,7 @@
  */
 /* eslint-disable */
 import React, { useState } from 'react';
-import { Progress, Button } from '@vv-desktop-web-core/atoms';
+import { Progress, Button } from '@xx-desktop-web-core/atoms';
 
 const ButtonGroup = Button.Group;
 

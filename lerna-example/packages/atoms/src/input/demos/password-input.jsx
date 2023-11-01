@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { Input, Space } from '@vv-desktop-web-core/atoms';
+import { Input, Space } from '@xx-desktop-web-core/atoms';
 import { EyeInvisibleOutlined, EyeTwoTone } from '@ant-design/icons';
 
 export default () => (

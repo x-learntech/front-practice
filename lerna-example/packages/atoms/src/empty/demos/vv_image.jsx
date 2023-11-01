@@ -3,7 +3,7 @@
  * desc: 可以通过设置 image 为 Empty.xxx 切换图片类型
  */
 import React from 'react';
-import { Row, Col, Empty, Divider } from '@vv-desktop-web-core/atoms';
+import { Row, Col, Empty, Divider } from '@xx-desktop-web-core/atoms';
 
 export default () => (
     <>

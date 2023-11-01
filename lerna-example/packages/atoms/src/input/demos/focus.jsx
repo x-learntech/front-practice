@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { Input, Space, Button, Switch } from '@vv-desktop-web-core/atoms';
+import { Input, Space, Button, Switch } from '@xx-desktop-web-core/atoms';
 
 export default () => {
     const inputRef = React.useRef(null);

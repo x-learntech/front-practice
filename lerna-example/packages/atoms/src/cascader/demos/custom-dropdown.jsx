@@ -4,7 +4,7 @@
  */
 /* eslint-disable */
 import React from 'react';
-import { Cascader, Divider } from '@vv-desktop-web-core/atoms';
+import { Cascader, Divider } from '@xx-desktop-web-core/atoms';
 
 const options = [
     {

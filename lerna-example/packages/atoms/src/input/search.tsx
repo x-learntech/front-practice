@@ -10,7 +10,7 @@ import { ConfigContext } from 'antd/es/config-provider/context';
 import { SearchProps } from 'antd/es/input';
 import classnames from 'classnames';
 import { IExtendProps } from './typings';
-import { useControllableValue } from '@vv-desktop-web-core/hooks';
+import { useControllableValue } from '@xx-desktop-web-core/hooks';
 import { SearchOutlined } from '@ant-design/icons';
 
 /***

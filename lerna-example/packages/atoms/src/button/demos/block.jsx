@@ -4,7 +4,7 @@
  */
 /* eslint-disable */
 import React from 'react';
-import { Button, Space } from '@vv-desktop-web-core/atoms';
+import { Button, Space } from '@xx-desktop-web-core/atoms';
 
 export default function Demo() {
     return (

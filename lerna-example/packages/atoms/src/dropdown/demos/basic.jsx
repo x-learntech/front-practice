@@ -4,7 +4,7 @@
  */
 /* eslint-disable */
 import React from 'react';
-import { Menu, Divider, Space, Button } from '@vv-desktop-web-core/atoms';
+import { Menu, Divider, Space, Button } from '@xx-desktop-web-core/atoms';
 
 import { DownOutlined, QuestionCircleOutlined, BorderOuterOutlined } from '@ant-design/icons';
 

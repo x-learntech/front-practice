@@ -3,7 +3,7 @@
  * desc: 当前页签高亮固定宽度效果
  */
 import React from 'react';
-import { Tabs } from '@vv-desktop-web-core/atoms';
+import { Tabs } from '@xx-desktop-web-core/atoms';
 
 const { TabPane } = Tabs;
 

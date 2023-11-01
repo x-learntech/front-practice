@@ -4,7 +4,7 @@
  */
 /* eslint-disable */
 import React from 'react'
-import { Button, notification } from '@vv-desktop-web-core/atoms';
+import { Button, notification } from '@xx-desktop-web-core/atoms';
 
 export default function Demo() {
 

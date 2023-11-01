@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { List, Typography } from '@vv-desktop-web-core/atoms';
+import { List, Typography } from '@xx-desktop-web-core/atoms';
 
 const data = [
   'Racing car sprays burning fuel into crowd.',

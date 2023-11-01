@@ -4,7 +4,7 @@
  */
 /* eslint-disable */
 import React from 'react';
-import { Button, Menu, Dropdown, Icon } from '@vv-desktop-web-core/atoms';
+import { Button, Menu, Dropdown, Icon } from '@xx-desktop-web-core/atoms';
 
 function handleMenuClick(e) {
     console.log('click', e);

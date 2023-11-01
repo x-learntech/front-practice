@@ -4,7 +4,7 @@
  */
 /* eslint-disable */
 import React from 'react';
-import { Table, Tag, Space } from '@vv-desktop-web-core/atoms';
+import { Table, Tag, Space } from '@xx-desktop-web-core/atoms';
 
 const columns = [
   {

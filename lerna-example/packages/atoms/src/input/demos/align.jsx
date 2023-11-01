@@ -18,7 +18,7 @@ import {
     AutoComplete,
     Mentions,
     Space
-} from '@vv-desktop-web-core/atoms';
+} from '@xx-desktop-web-core/atoms';
 
 const { Text } = Typography;
 const { Option } = Select;

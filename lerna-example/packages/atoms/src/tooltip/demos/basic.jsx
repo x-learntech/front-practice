@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React from 'react';
-import { Tooltip } from '@vv-desktop-web-core/atoms';
+import { Tooltip } from '@xx-desktop-web-core/atoms';
 
 export default function Demo() {
   return (

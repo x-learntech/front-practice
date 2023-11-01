@@ -3,7 +3,7 @@
  * desc: 按钮有超大、大、中、小三种尺寸。<br>通过设置 `size` 为 `largeX` `large` `small` 分别把按钮设为超大、大、小尺寸。若不设置 `size`，则尺寸为中。
  */
 import { DownloadOutlined } from '@ant-design/icons'
-import { Button, Radio, Space } from '@vv-desktop-web-core/atoms'
+import { Button, Radio, Space } from '@xx-desktop-web-core/atoms'
 /* eslint-disable */
 import React from 'react'
 

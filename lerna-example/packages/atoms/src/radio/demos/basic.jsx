@@ -4,7 +4,7 @@
  */
 /* eslint-disable */
 import React from 'react';
-import { Radio } from '@vv-desktop-web-core/atoms';
+import { Radio } from '@xx-desktop-web-core/atoms';
 import '../style/index.less'
 
 export default function Demo() {

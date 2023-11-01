@@ -4,7 +4,7 @@
  */
 /* eslint-disable */
 import React from 'react';
-import { Input, Tooltip } from '@vv-desktop-web-core/atoms';
+import { Input, Tooltip } from '@xx-desktop-web-core/atoms';
 import './style.css';
 
 function formatNumber(value) {

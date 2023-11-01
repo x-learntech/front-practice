@@ -5,7 +5,7 @@
 
 import React from 'react';
 
-import { Select, Divider, InputNumber } from '@vv-desktop-web-core/atoms';
+import { Select, Divider, InputNumber } from '@xx-desktop-web-core/atoms';
 import Input from '../index';
 import './style.css';
 
@@ -109,7 +109,7 @@ export default () => (
       <Search placeholder="关键词" style={{ width: 224 }} />
       <br />
 
-      <Search defaultValue={'微微'} style={{ width: 224 }} allowClear />
+      <Search defaultValue={'vv'} style={{ width: 224 }} allowClear />
       <br />
     </div>
     <h2>文本域：</h2>

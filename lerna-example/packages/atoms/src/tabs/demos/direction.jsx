@@ -3,7 +3,7 @@
  * desc: 可以左右、上下滑动，容纳更多标签， 多个方向切换效果， 多个类型切换
  */
 import { Tabs } from 'antd';
-import { Radio } from '@vv-desktop-web-core/atoms';
+import { Radio } from '@xx-desktop-web-core/atoms';
 import React, { useState } from 'react';
 
 const { TabPane } = Tabs;
