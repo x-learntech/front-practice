@@ -1,6 +1,6 @@
 {
   "name": "@vv-desktop-web-core/atoms",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "基础组件库",
   "main": "./lib/index.js",
   "unpkg": "dist/index.umd.min.js",
@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
-    "@vv-desktop-web-core/hooks": "^1.0.2",
+    "@vv-desktop-web-core/hooks": "^1.0.3",
     "antd": "^4.24.7",
     "autoprefixer": "^10.4.2",
     "classnames": "^2.3.1",

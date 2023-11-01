@@ -1,6 +1,6 @@
 {
   "name": "@vv-desktop-web-core/hooks",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "hooks库",
   "main": "./lib/index.js",
   "module": "./es/index.js",
