@@ -18,5 +18,5 @@ export default defineConfig({
   prebundle: {
     deps: [], // 需要预打包的依赖包名，需要安装在 `devDependencies` 中
     output: 'compiled', // 默认输出目录，有自定义需求时才需配置
-  },
+  }
 });

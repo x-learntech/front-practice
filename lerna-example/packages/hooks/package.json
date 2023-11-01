@@ -15,8 +15,7 @@
   "scripts": {
     "dev": "father dev",
     "build": "father build",
-    "build:deps": "father prebundle",
-    "prepublishOnly": "father doctor && npm run build"
+    "build:deps": "father prebundle"
   },
   "keywords": [],
   "dependencies": {
@@ -25,5 +24,6 @@
   },
   "peerDependencies": {
     "react": "^16.8.6 || ^17.0"
-  }
+  },
+  "gitHead": "9c274503c492ce0697c429a978b109dc9b3bb08c"
 }
