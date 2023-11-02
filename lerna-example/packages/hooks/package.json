@@ -1,6 +1,6 @@
 {
   "name": "@xx-desktop-web-core/hooks",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "hooks库",
   "main": "./lib/index.js",
   "module": "./es/index.js",
@@ -26,5 +26,5 @@
   "peerDependencies": {
     "react": "^16.8.6 || ^17.0"
   },
-  "gitHead": "8e1cacf42f64902a85f8279554c7836709e2e990"
+  "gitHead": "e73980d7755e36f6855408e3b76c80a23b847621"
 }
