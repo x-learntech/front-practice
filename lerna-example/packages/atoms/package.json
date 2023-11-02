@@ -1,6 +1,6 @@
 {
   "name": "@xx-desktop-web-core/atoms",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "基础组件库",
   "main": "./lib/index.js",
   "unpkg": "dist/index.umd.min.js",
