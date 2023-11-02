@@ -3,8 +3,8 @@
   "name": "xx-desktop-web-core",
   "version": "1.0.0",
   "scripts": {
-    "publish": "lerna publish",
-    "build:publish": "pnpm run build:all & lerna publish",
+    "publish": "lerna publish -m \"ci: 发布新版本\"",
+    "build:publish": "pnpm run build:all & lerna publish -m \"ci: 发布新版本\"",
     "clean": "lerna clean",
     "build:atoms": "lerna run build --scope @xx-desktop-web-core/atoms",
     "build:hooks": "lerna run build --scope @xx-desktop-web-core/hooks",
