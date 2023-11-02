@@ -8,7 +8,8 @@
     "clean": "lerna clean",
     "build:atoms": "lerna run build --scope @xx-desktop-web-core/atoms",
     "build:hooks": "lerna run build --scope @xx-desktop-web-core/hooks",
-    "build:all": "pnpm run build:hooks && pnpm run build:atoms"
+    "build:all": "pnpm run build:hooks && pnpm run build:atoms",
+    "build-all": "lerna run build"
   },
   "files": [
     "dist",
@@ -17,7 +18,8 @@
     "compiled"
   ],
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "http://127.0.0.1:4873"
   },
   "devDependencies": {
     "lerna": "^7.1.5",
