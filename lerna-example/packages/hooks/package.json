@@ -1,6 +1,7 @@
 {
   "name": "@xx-desktop-web-core/hooks",
-  "version": "1.0.8",
+  "version": "1.0.9",
+  "author": "test",
   "description": "hooks库",
   "main": "./lib/index.js",
   "module": "./es/index.js",
