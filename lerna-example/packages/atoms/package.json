@@ -1,7 +1,7 @@
 {
   "name": "@xx-desktop-web-core/atoms",
-  "author": "test",
-  "version": "1.0.10",
+  "author": "learntech",
+  "version": "1.0.11",
   "description": "基础组件库",
   "main": "./lib/index.js",
   "unpkg": "dist/index.umd.min.js",
@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
-    "@xx-desktop-web-core/hooks": "^1.0.9",
+    "@xx-desktop-web-core/hooks": "^1.0.10",
     "antd": "^4.24.7",
     "autoprefixer": "^10.4.2",
     "classnames": "^2.3.1",
@@ -42,5 +42,5 @@
     "react": "^17.0.0",
     "react-dom": "^17.0.0"
   },
-  "gitHead": "e73980d7755e36f6855408e3b76c80a23b847621"
+  "gitHead": "2b848e25d4a5b044d28bf9983a80ee80131925a3"
 }
